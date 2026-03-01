@@ -5,6 +5,10 @@
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green)](https://iteratools.com)
 [![API Docs](https://img.shields.io/badge/docs-iteratools.com-blue)](https://iteratools.com)
 
+<a href="https://glama.ai/mcp/servers/@fredpsantos33/itera-tools-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@fredpsantos33/itera-tools-mcp/badge" alt="IteraTools MCP server" />
+</a>
+
 ## What is IteraTools?
 
 IteraTools is a Brazilian API platform providing ready-to-use utilities for AI agents and developers. With a single API key, access 40+ tools via the Model Context Protocol (MCP).
