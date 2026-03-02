@@ -1,29 +1,34 @@
 # IteraTools MCP Server
 
-> Production-ready MCP server with 40+ tools — QR codes, PDFs, text processing, TTS, web scraping, image generation and more.
+> Production-ready MCP server with 40+ tools for AI agents — QR codes, PDFs, text processing, TTS, web scraping, image generation and more.
 
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green)](https://iteratools.com)
 [![API Docs](https://img.shields.io/badge/docs-iteratools.com-blue)](https://iteratools.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What is IteraTools?
 
-IteraTools is a Brazilian API platform providing ready-to-use utilities for AI agents and developers. With a single API key, access 40+ tools via the Model Context Protocol (MCP).
+IteraTools is a production-ready API platform providing ready-to-use utilities for AI agents and developers. With a single API key, access 40+ tools via the Model Context Protocol (MCP).
+
+Uses **x402 micropayments** on Base — no subscription needed, pay per use in USDC.
 
 ## Available Tools
 
 | Category | Tools |
 |----------|-------|
-| QR & Barcodes | Generate QR codes, barcodes |
-| PDF | HTML to PDF, merge, split, watermark |
-| Text | Summarize, translate, extract, format |
-| Images | Generate, resize, convert, watermark |
-| Audio | TTS (text-to-speech), transcription |
-| Web | Scrape, screenshot, metadata |
-| Utils | UUID, hash, base64, URL shortener |
+| 🖼️ Images | Generate (Flux 1.1 Pro), fast generate, background removal (rembg), resize, OCR |
+| 🎬 Video | Generate (Kling), extract frames |
+| 📄 PDF | Extract text, generate from HTML |
+| 🌐 Web | Scrape, screenshot, search |
+| 🔊 Audio | TTS (text-to-speech), transcription |
+| 📱 WhatsApp | Send template, reply in conversation |
+| 🔧 Utils | QR code, URL shortener, email validate, weather, crypto price, code execution |
 
-## MCP Configuration
+## Quick Start
 
-Add to your `claude_desktop_config.json`:
+### Claude Desktop
+
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
 ```json
 {
@@ -39,12 +44,40 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-## Get Started
+### Get API Key
 
-1. Sign up at [iteratools.com](https://iteratools.com)
-2. Get your API key
-3. Add to your MCP client config above
+1. Visit [iteratools.com](https://iteratools.com)
+2. Sign up for free
+3. Copy your API key
 
-## Full API Documentation
+### Example Usage
 
-→ [iteratools.com](https://iteratools.com)
+```bash
+# Generate a QR code
+curl -X POST https://api.iteratools.com/qrcode \
+  -H "X-API-Key: your-key" \
+  -d '{"text": "https://iteratools.com"}'
+
+# Generate an image
+curl -X POST https://api.iteratools.com/image/generate \
+  -H "X-API-Key: your-key" \
+  -d '{"prompt": "a sunset over mountains"}'
+```
+
+## Pricing
+
+Pay per use — no subscription:
+
+| Tool | Price |
+|------|-------|
+| Image generate (Flux 1.1 Pro) | $0.005 |
+| Image fast | $0.002 |
+| Video generate | $0.05 |
+| PDF/Web/Utils tools | $0.001–0.003 |
+
+## Links
+
+- 🌐 [Website](https://iteratools.com)
+- 📚 [API Documentation](https://iteratools.com/docs)
+- 🐙 [GitHub](https://github.com/fredpsantos33/iteratools-mcp)
+- 💬 [Support](https://iteratools.com/support)
