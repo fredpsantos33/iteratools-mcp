@@ -1,0 +1,15 @@
+# IteraTools MCP Server configuration
+# https://smithery.ai/docs/config
+
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: Your IteraTools API key (get one at https://iteratools.com)
+    required: []
+  exampleConfig:
+    apiKey: "your-api-key"
+  url: https://iteratools--iterasoft.run.tools
