@@ -1,0 +1,29 @@
+{
+  "name": "iteratools-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for IteraTools — 40+ pay-per-use API tools for AI agents",
+  "main": "index.js",
+  "bin": {
+    "iteratools-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["mcp", "ai", "agents", "api", "tools", "iteratools", "model-context-protocol"],
+  "author": "Iterasoft",
+  "license": "MIT",
+  "homepage": "https://iteratools.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredpsantos33/iteratools-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fredpsantos33/iteratools-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
